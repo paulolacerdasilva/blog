@@ -13,6 +13,13 @@ class Paginas extends Controller{
          ];
           $this->view('paginas/sobre', $dados);
       }// fim do método sobre
+
+      public function noticia(){
+          $dados = ['titulo'=>'Página Noticia',
+          'descricao'=>'Noticia de hoje...'
+         ];
+          $this->view('paginas/noticia', $dados);
+      }// fim do método sobre
 }//fim da classe
 
 
